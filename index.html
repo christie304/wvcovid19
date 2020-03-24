@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<!-- 
+    Authors:
+        Christie Trent | Twitter: @christie_codes | Web: https://chrismichele.github.io 
+        Bryan Shaw | Twitter: @BGoGolf
+        
+    Based on data displayed on http://coronavirus.wv.gov
+-->
+<html>
+    <head>
+        <title>WV COVID-19 Map</title>
+        <meta property="og:site_name" content="WV COVID-19"/>
+        <!--<meta property="og:image" content="https://www.flickr.com/photos/endogamia/49691315907/in/explore-2020-03-23/">-->
+        <meta property="og:image" content="http://wvcovid19map.com/wv-covid-19-map.jpg">
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="http://wvcovid19map.com/">
+
+    
+        <style>
+            .google-maps {
+                position: relative;
+                padding-bottom: 75%;  /*This is the aspect ratio */
+                height: 0;
+                overflow: hidden;
+            }
+            .google-maps iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+        </style>
+</head>
+<body>
+
+<div class="google-maps">
+    <iframe src="https://www.google.com/maps/d/embed?mid=15xZSfREv7Noecfcg8yCQi4AkXicBqxsc"></iframe>
+</div>
+
+</body>
+
+</html>
